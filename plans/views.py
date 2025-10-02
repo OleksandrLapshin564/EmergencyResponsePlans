@@ -1,7 +1,34 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-# Home page view
+# Home page
 def home(request):
-    return HttpResponse("<h1>Welcome to Emergency Response Plans</h1>"
-                        "<p>This is your first page!</p>")
+    return render(request, "plans/home.html")
+
+# Lecture pages
+def lecture1(request):
+    return render(request, "plans/lecture1.html")
+
+def lecture2(request):
+    return render(request, "plans/lecture2.html")
+
+def lecture3(request):
+    return render(request, "plans/lecture3.html")
+
+# New lectures (Emergency Response content)
+def first_aid(request):
+    return render(request, "plans/first_aid.html")
+
+def fire_safety(request):
+    return render(request, "plans/fire_safety.html")
+
+def flood_earthquake(request):
+    return render(request, "plans/flood_earthquake.html")
+def disaster_preparedness(request):
+    return render(request, "plans/disaster_preparedness.html")
+
+def evacuation_plans(request):
+    return render(request, "plans/evacuation_plans.html")
+
+def emergency_contacts(request):
+    return render(request, "plans/emergency_contacts.html")
+

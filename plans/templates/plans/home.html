@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home — Emergency Response Plans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container mt-5 text-center">
+    <h1 class="mb-4">Emergency Response Plans</h1>
+    <h3 class="mb-4">Educational Project — Lecture</h3>
+    <p class="mb-4">Welcome to the Lecture Page! This website is designed to practice building a Python Django learning project with Emergency Response content.</p>
+
+    <div class="d-grid gap-3 col-6 mx-auto">
+        <a href="{% url 'plans:lecture1' %}" class="btn btn-primary btn-lg">Lecture 1: Introduction</a>
+        <a href="{% url 'plans:lecture2' %}" class="btn btn-success btn-lg">Lecture 2: Preparedness</a>
+        <a href="{% url 'plans:lecture3' %}" class="btn btn-warning btn-lg">Lecture 3: Communication</a>
+        <a href="{% url 'plans:first_aid' %}" class="btn btn-danger btn-lg">First Aid Basics</a>
+        <a href="{% url 'plans:fire_safety' %}" class="btn btn-dark btn-lg">Fire Safety</a>
+        <a href="{% url 'plans:flood_earthquake' %}" class="btn btn-info btn-lg">Flood & Earthquake Response</a>
+    </div>
+
+    <footer class="mt-5">
+        <p class="text-muted">&copy; 2025 Emergency Response Plans Project</p>
+    </footer>
+</div>
+</body>
+</html>

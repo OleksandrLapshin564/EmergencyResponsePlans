@@ -1,12 +1,7 @@
-"""
-URL configuration for EmergencyResponsePlans project.
-"""
-
 from django.contrib import admin
-from django.urls import path
-from plans.views import home  # import our view for the main page
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),  # home page
+    path('', include('plans.urls')),  # home and lecture pages
 ]
