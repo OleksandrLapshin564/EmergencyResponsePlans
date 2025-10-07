@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'plans',  # наша аплікація
+    'plans',  # our application
+    'presentation',
 ]
 
 MIDDLEWARE = [
