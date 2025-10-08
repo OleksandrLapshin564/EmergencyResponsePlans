@@ -29,14 +29,27 @@ docker-compose.override.yml
 # ======================
 # PDFs / Presentation output
 # ======================
-presentation/output/
+
+# Ignore temporary PDFs from the staging folder
+presentation/output_tmp/
+
+# Save stable PDFs from the source folder
+!presentation/output/
+!presentation/output/*.pdf
+
+# Ignore individual PDFs created in the root or in presentation/
 presentation/*.pdf
 
 # ======================
-# Assets (optional)
+# Presentation assets (images, diagrams, etc.)
 # ======================
-# Якщо картинки для презентацій НЕ треба комітити, розкоментуйте:
-# presentation/assets/
+# Save all files from presentation/assets/
+!presentation/assets/
+!presentation/assets/**
+
+# ТWe also store images in static/images/
+!static/images/
+!static/images/**
 
 # ======================
 # OS / Editor temporary files
